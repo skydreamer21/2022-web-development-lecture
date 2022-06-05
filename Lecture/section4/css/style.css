@@ -1,0 +1,25 @@
+body {
+    background-color: #F9F3EE;
+}
+
+hr {
+    /* border-style: solid solid dotted dashed; */
+    border-style: dotted none none none;
+    /* background-color: white; */
+    border-width : 5px;
+    border-color : #F9CEEE;
+    height:1px;
+    width:10%; 
+}
+
+h1,h3 {
+    color : #97C4B8;
+}
+
+img {
+ width : 100px;
+ display:block;
+ margin:0;
+ /* max-width: 100%; */
+}
+

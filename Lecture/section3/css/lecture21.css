@@ -1,0 +1,15 @@
+img {
+ width : 100px;
+ display:block;
+ margin:0;
+ /* max-width: 100%; */
+}
+
+#profile {
+    /* border-collapse: collapse; */
+    /* table-layout: fixed; */
+}
+
+#profileImg {
+    line-height: 0;
+}
