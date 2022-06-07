@@ -1,0 +1,55 @@
+body {
+    margin : 0;
+    text-align : center;
+}
+
+h1 {
+    margin : 100px 0 0;
+    font-family: 'Delius', cursive;
+}
+
+h2 {
+    font-family: 'Radio Canada', sans-serif;
+}
+h3 {
+    font-family: 'Radio Canada', sans-serif;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.top-container {
+    background-color: #CDF0EA;
+    overflow: hidden;
+    position : relative;
+}
+
+.middle-container {
+}
+.bottom-container {
+}
+
+
+.top-cloud {
+    position : absolute;
+    top : 50px;
+    right : 15%;
+}
+.bottom-cloud {
+    position:absolute;
+    top : 200px;
+}
+
+#profile-img {
+    display : inline-block;
+    width : 150px;
+}
+
+.first-skill {
+    width : 100px;
+}
+
+.first-challenge {
+    width:100px;
+}
