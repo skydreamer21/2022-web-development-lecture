@@ -1,5 +1,8 @@
-h1 {
+body {
     font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
     font-weight: 900;
     font-size:3rem;
     line-height:1.5;
@@ -7,9 +10,14 @@ h1 {
 
 /* general tag css */
 /* Top (Header) section css Start */
-
 #title {
     background-color: #ff3c68;
+    color : #fff;
+}
+    /* Navigation Bar Start*/
+
+#title nav {
+    padding-bottom: 4.5rem; 
 }
 
 .container-fluid {
@@ -18,15 +26,15 @@ h1 {
 
 .navbar-brand {
     font-family: 'Ubuntu', sans-serif;
-    font-size : 2rem;
+    font-size : 2.5rem;
+    font-weight: bold;
 }
 
 li.nav-item {
     margin-left : 10px;
 }
+    /* Navigation Bar End*/
 
-.nav-link {
-    font-family: 'Montserrat', sans-serif;
-}
+
 
 /* Top (Header) section css End */
