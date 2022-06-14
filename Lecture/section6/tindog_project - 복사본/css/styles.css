@@ -1,62 +1,106 @@
-h1 {
+body {
     font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
     font-weight: 900;
-    font-size:3rem;
+    font-size:3.5rem;
     line-height:1.5;
-    color : #fff;
 }
 
 /* general tag css */
-
-/* Top (Header) section css Start */   
-    /* Navigation Bar Start*/
-
+/* Top (Header) section css Start */
 #title {
     background-color: #ff3c68;
-    height : 650px;
-    overflow: hidden;
+    color : #fff;
+}
+    /* Navigation Bar Start*/
+
+#title nav {
+    padding-bottom: 4.5rem; 
 }
 
-.title-container {
+.container-fluid {
     padding: 3% 15%;
 }
 
 .navbar-brand {
     font-family: 'Ubuntu', sans-serif;
-    font-size : 2rem;
+    font-size : 2.5rem;
+    font-weight: bold;
 }
 
 li.nav-item {
-    margin-left : 35px;
-    font-size : 1.1rem;
+    padding : 0 18px;
 }
 
 .nav-link {
-    font-family: 'Montserrat', sans-serif;
+    font-size : 1.2rem;
+    font-weight:400;
 }
     /* Navigation Bar End*/
 
-    
-.title-text {
-    margin-top:80px;
-    margin-bottom: 40px;
-}
-
+/* 마진을 퍼센트로 지정하게 되면 부모요소의 width를 기준으로 퍼센트 적용이 된다. */
 #title button {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.title-img-box {
-    position : relative;
+    margin : 5% 3% 5% 0;
 }
 
 .title-img {
-    /* text-align: center; */
-    position : absolute;
-    left : 50%;
-    width : 320px;
-    /* 가로를 가운데 정렬 해놓고 돌려놓으니까 창 크기에 따라 y높이가 달라지는 것처럼 보임; */
-    transform: rotate(20deg) translate(-50%, 120px);
+    width: 60%;
+    transform: rotate(25deg);
 }
 
+
 /* Top (Header) section css End */
+
+/* Features section css Start */
+
+.feature-box {
+    padding: 100px 0;
+}
+.feature-box > div {
+    margin: 0;
+    justify-content: space-between;
+}
+
+.feature-row {
+    padding: 40px;
+    text-align: center;
+}
+
+.feature-row i {
+    font-size:3rem;
+    color: #ef8172;
+}
+
+.feature-row i:hover {
+    color: #ff4c68;
+}
+
+/* overflow가 된 텍스트 가운데 정렬하기 
+1. flex -> justify-content : center
+2. negative margin both left,right side -> 늘리는 효과
+*/
+
+.feature-row h3 {
+    font-size:1.5rem;
+    font-weight:900;
+    padding: 15px 0 10px 0;
+    margin-bottom:0;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+}
+
+.feature-row p {
+    margin-bottom: 0;
+    color: #8f8f8f
+}
+
+@media (max-width: 992px) {
+    .feature-box > .row > div:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+/* Features section css End */

@@ -4,7 +4,7 @@ body {
 
 h1 {
     font-weight: 900;
-    font-size:3rem;
+    font-size:3.5rem;
     line-height:1.5;
 }
 
@@ -31,10 +31,63 @@ h1 {
 }
 
 li.nav-item {
-    margin-left : 10px;
+    padding : 0 18px;
+}
+
+.nav-link {
+    font-size : 1.2rem;
+    font-weight:400;
 }
     /* Navigation Bar End*/
 
+/* 마진을 퍼센트로 지정하게 되면 부모요소의 width를 기준으로 퍼센트 적용이 된다. */
+#title button {
+    margin : 5% 3% 5% 0;
+}
+
+.title-img {
+    width: 60%;
+    transform: rotate(25deg);
+}
 
 
 /* Top (Header) section css End */
+
+/* Features section css Start */
+#features {
+    padding : 7% 15%;
+}
+
+.feature-box {
+    padding : 5%;
+    text-align: center;
+}
+
+.feature-box i {
+    margin-bottom: 1rem;
+    color: #ef8172;
+}
+
+.feature-box i:hover {
+    margin-bottom: 1rem;
+    color: #ff4c68;
+}
+
+.feature-box h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.feature-box p {
+    color: #8f8f8f;
+}
+
+@media (min-width: 1400px) {
+    .feature-box h3 {
+        white-space: nowrap;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Features section css End */

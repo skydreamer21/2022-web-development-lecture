@@ -25,10 +25,10 @@
 <body>
 
   <section id="title">
-    <div class="title-container container-fluid">
+    <div class="container-fluid">
         <!-- Nav Bar -->
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand ms-2" href="">tindog</a>
+            <a class="navbar-brand" href="">tindog</a>
             <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -49,12 +49,12 @@
         <!-- Title -->
         <div class="row">
             <div class="col-lg">
-              <h1 class="title-text">Meet new and interesting dogs nearby.</h1>
+              <h1>Meet new and interesting dogs nearby.</h1>
               <!-- btn 크기는 패딩으로 조절해줌 (+font size) -->
-              <button type="button" class="btn btn-dark btn-lg me-2"><i class="fa-brands fa-apple"></i> Download</button>
+              <button type="button" class="btn btn-dark btn-lg"><i class="fa-brands fa-apple"></i> Download</button>
               <button type="button" class="btn btn-outline-light btn-lg"><i class="fa-brands fa-google-play"></i> Download</button>
             </div>
-            <div class="title-img-box col-lg">
+            <div class="col-lg">
               <img class="title-img" src="images/iphone6.png" alt="iphone-mockup">
             </div>
         </div>
@@ -67,14 +67,27 @@
 
   <section id="features">
 
-    <h3>Easy to use.</h3>
-    <p>So easy to use, even your dog could do it.</p>
-
-    <h3>Elite Clientele</h3>
-    <p>We have all the dogs, the greatest dogs.</p>
-
-    <h3>Guaranteed to work.</h3>
-    <p>Find the love of your dog's life or your money back.</p>
+    <div class="container-fluid feature-box">
+      <div class="row">
+        <div class="feature-row col-lg-4 d-flex flex-column justify-content-between">
+          <span><i class="fa-solid fa-circle-check"></i></span>
+          <h3>Easy to use.</h3>
+          <p>So easy to use, even your dog could do it.</p>
+        </div>
+    
+        <div class="feature-row col-lg-4 d-flex flex-column justify-content-between">
+          <span><i class="fa-solid fa-bullseye"></i></span>
+          <h3>Elite Clientele</h3>
+          <p>We have all the dogs, the greatest dogs.</p>
+        </div>
+    
+        <div class="feature-row col-lg-4 d-flex flex-column justify-content-between">
+          <span><i class="fa-solid fa-heart"></i></span>
+          <h3>Guaranteed to work.</h3>
+          <p>Find the love of your dog's life or your money back.</p>
+        </div>
+      </div>
+    </div>
 
   </section>
 
