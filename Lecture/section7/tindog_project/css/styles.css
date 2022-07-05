@@ -1,0 +1,160 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-weight: 900;
+    font-size:3.5rem;
+    line-height:1.5;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+/* general tag css */
+/* Top (Header) section css Start */
+#title {
+    background-color: #ff3c68;
+    color : #fff;
+}
+    /* Navigation Bar Start*/
+
+#title nav {
+    padding-bottom: 4.5rem; 
+}
+
+.container-fluid {
+    padding: 3% 15%;
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size : 2.5rem;
+    font-weight: bold;
+}
+
+li.nav-item {
+    padding : 0 18px;
+}
+
+.nav-link {
+    font-size : 1.2rem;
+    font-weight:400;
+}
+    /* Navigation Bar End*/
+
+/* 마진을 퍼센트로 지정하게 되면 부모요소의 width를 기준으로 퍼센트 적용이 된다. */
+#title button {
+    margin : 5% 3% 5% 0;
+}
+
+.title-img {
+    width: 60%;
+    transform: rotate(25deg);
+}
+
+
+/* Top (Header) section css End */
+
+/* --------------------------------------------- */
+
+/* Features section css Start */
+#features {
+    padding : 7% 15%;
+}
+
+.feature-box {
+    padding : 5%;
+    text-align: center;
+}
+
+.feature-box i {
+    margin-bottom: 1rem;
+    color: #ef8172;
+}
+
+.feature-box i:hover {
+    margin-bottom: 1rem;
+    color: #ff4c68;
+}
+
+.feature-box h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.feature-box p {
+    color: #8f8f8f;
+}
+
+@media (min-width: 1400px) {
+    .feature-box h3 {
+        white-space: nowrap;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Features section css End */
+
+/* --------------------------------------------- */
+
+/* Testimonials section css Start */
+#testimonials {
+    background-color: #ef8172;
+    text-align: center;
+    color: #fff;
+}
+
+#testimonials .carousel-indicators {
+    margin-bottom : 4rem;
+}
+
+#testimonials .carousel-indicators button {
+    width : 10px;
+    height: 10px;
+    border-radius : 100%;
+    margin : 0 4px;
+}
+
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+#testimonials img {
+    margin: 20px;
+    width: 10%;
+    border-radius: 100%;
+}
+/* Testimonials section css End */
+
+/* --------------------------------------------- */
+
+/* Press section css Start */
+#press {
+    padding-bottom: 3%; /* 공간의 영역 확보 */ 
+    background-color: #ef8172;
+    text-align: center;
+}
+
+#press img {
+    width : 15%;
+    margin: 20px 20px 50px; /* 개별적인 요소 분리 */
+}
+
+
+/* Press section css End */
+
+/* --------------------------------------------- */
+
+/* Pricing section css START */
+
+
+
+
+/* Pricing section css END */
