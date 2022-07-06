@@ -1,44 +1,68 @@
+/* ----- general tag css START -----*/
+
 body {
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
-/* <Code Refactoring>
-    
-h1이란 모든 태그에게 지정되기엔 구체적인 스타일을 다루고 있음
-    -> 이 설정은 title section의 h1에만 적용됨
-    -> 따라서 태그 selector로 하기에는 부적절
-    => type of heading 에 관한 class를 만들어서 따로 빼주자!
-*/
-h1 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: 900;
+}
+
+p {
+    color: #8f8f8f;
+}
+
+/* ----- general tag css END -----*/
+
+/* ----- general class css START -----*/
+
+/* Heading */
+
+.big-heading {
     font-size:3.5rem;
     line-height:1.5;
 }
 
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
+.section-heading {
     font-size: 3rem;
     line-height: 1.5;
 }
 
-/* general tag css END*/
+/* Container */
 
+.container-fluid {
+    padding: 7% 15%;
+}
 
-/* Top (Header) section css Start */
-#title {
+/* Sections */
+
+.colored-section {
     background-color: #ff3c68;
     color : #fff;
-    /* height : 750px; */
 }
-    /* Navigation Bar Start*/
 
+.white-section {
+    background-color: white;
+}
+
+
+/* ----- general class css START -----*/
+
+
+
+/* ---------- Top (Header) section css Start ----------*/
+
+/* ----- Navigation Bar Start -----*/
+
+/* 1040px 이하에서는 4rem으로 조정 */
 #title nav {
     padding-bottom: 4.5rem; 
 }
 
-.container-fluid {
+#title .container-fluid {
     padding: 3% 15% 7%;
+    text-align: left;
 }
 
 .navbar-brand {
@@ -55,7 +79,11 @@ li.nav-item {
     font-size : 1.2rem;
     font-weight:400;
 }
-    /* Navigation Bar End*/
+
+/* ----- Navigation Bar End -----*/
+
+
+/* ----- Title Start -----*/
 
 /* 마진을 퍼센트로 지정하게 되면 부모요소의 width를 기준으로 퍼센트 적용이 된다. */
 #title button {
@@ -96,6 +124,8 @@ li.nav-item {
     }
 }
 
+/* ----- Title END -----*/
+
 /* 
     <Trouble Shooting>
     1. title-img 에 absolute를 주게 되면 title을 감싸고 있는 div의 크기(height)가 img에 크기에서 독립적이게 된다.
@@ -105,22 +135,18 @@ li.nav-item {
     4. 따라서 이를 해결하려면 가까운 부모 요소에 position을 relative를 준다.
 */
 
+/* ---------- Top (Header) section css End ---------- */
 
-/* Top (Header) section css End */
 
-/* --------------------------------------------- */
 
-/* Features section css Start */
+/* ----- Features section css Start ----- */
 #features {
-    padding : 7% 15%;
-    background-color: white;
     position : relative;
     /* z-index:1; 없어도 title-img 보다 html 구조상 아래 위치해 있기 때문에 더 위에 위치 */
 }
 
 .feature-box {
     padding : 5%;
-    text-align: center;
 }
 
 .feature-box i {
@@ -133,13 +159,8 @@ li.nav-item {
     color: #ff4c68;
 }
 
-.feature-box h3 {
+.feature-heading {
     font-size: 1.5rem;
-    font-weight: 900;
-}
-
-.feature-box p {
-    color: #8f8f8f;
 }
 
 @media (min-width: 1400px) {
@@ -150,15 +171,12 @@ li.nav-item {
     }
 }
 
-/* Features section css End */
+/* ----- Features section css End ----- */
 
-/* --------------------------------------------- */
 
-/* Testimonials section css Start */
+/* ----- Testimonials section css Start ----- */
 #testimonials {
     background-color: #ef8172;
-    text-align: center;
-    color: #fff;
 }
 
 #testimonials .carousel-indicators {
@@ -172,9 +190,9 @@ li.nav-item {
     margin : 0 4px;
 }
 
-
-.carousel-item {
-    padding: 7% 15%;
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 #testimonials img {
@@ -182,67 +200,54 @@ li.nav-item {
     width: 10%;
     border-radius: 100%;
 }
-/* Testimonials section css End */
+/* ----- Testimonials section css End ----- */
 
-/* --------------------------------------------- */
 
-/* Press section css Start */
+/* ----- Press section css Start -----*/
+
+
 #press {
-    padding-bottom: 3%; /* 공간의 영역 확보 */ 
     background-color: #ef8172;
-    text-align: center;
+    padding-bottom: 3%; /* 공간의 영역 확보 */ 
 }
 
+/* ❗❗ screen 작아지면 그림 엄청작아짐 -> responsive 수정 ❗❗ */
 #press img {
     width : 15%;
     margin: 20px 20px 50px; /* 개별적인 요소 분리 */
 }
 
 
-/* Press section css End */
+/* ----- Press section css End ----- */
 
-/* --------------------------------------------- */
 
-/* Pricing section css START */
+/* ----- Pricing section css START ----- */
+
+/* 카드 안에 있는 h2, h3 요소들은 bootStrap Card 설정의 h2,h3 style을 따름. => 일정 사이즈 이하면 고정 사이즈 + vw단위로 글씨크기를 화면에 맞춰 자연스럽게 바뀌게 함
+(물론 바꾸어주어도 됨.)  
+*/
+
 #pricing {
     padding : 100px;
-    text-align: center;
 }
 
 #pricing .row > div {
     padding : 3% 2%;
 }
 
-/* Pricing section css END */
+/* ----- Pricing section css END ----- */
 
 
-/* Call-to-Action section css START */
-
-#cta {
-    padding : 7% 15%;
-    background-color: #ff4c68;
-    text-align: center;
-}
-
-#cta h3 {
-    color : white;
-    font-weight: 900;
-    font-size : 3.5rem;
-    margin-bottom: 4rem;
-}
+/* ----- Call-to-Action section css START ----- */
 
 #cta button {
-    margin : 0 0.5rem;
+    margin : 5% 1% 0;
 }
 
-/* Call-to-Action section css END */
+/* ----- Call-to-Action section css END ----- */
 
 
-/* footer section css START */
-#footer {
-    padding : 4rem 15%;
-    text-align: center;
-}
+/* ----- footer section css START ----- */
 
 .footer-link {
     margin-bottom: 1rem;
@@ -254,10 +259,8 @@ li.nav-item {
 }
 
 #footer p {
-    color : #7a7a7a;
     font-size: 0.8rem;
     font-weight: 500;
 }
 
-
-/* footer section css END */
+/* ----- footer section css END ----- */
