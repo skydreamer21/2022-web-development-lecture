@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+
+        // 문자열은 변수가 주소자체를 가리킴
+        const arr = [];
+        var name = "Tom";
+        var name2 = "boy";
+        var name3 = "!";
+        var newName = name+name2+name3;
+        setTimeout(() => {
+            arr.push(name);
+            arr.push(name.substr(0,2));
+            arr.push(name2);
+            arr.push(name+name2+name3);
+            arr.push(name.concat(name2));
+        }, 2000);
+        
+
+        // 숫자는 변수가 값을 가리킴
+        const arr2 = [];
+        var var1 = "100";
+        var var2 = 101;
+        const var3 = 102;
+        const var4 = 103;
+        const var5 = 104;
+        const var6 = 105;
+        const var7 = 106;
+        const var8 = 107;
+        const var9 = 108;
+        const var10 = 109;
+        setTimeout(() => {
+            
+            for (let i=0;i<100000;i++) {
+                arr2.push(i);
+            }
+        
+            console.log(var1);
+            console.log(var2);
+            console.log(var3);
+            console.log(var4);
+            console.log(var5);
+            console.log(var6);
+            console.log(var7);
+            console.log(var8);
+            console.log(var9);
+            console.log(var10);
+        }, 3000);
+    </script>
+</body>
+</html>
